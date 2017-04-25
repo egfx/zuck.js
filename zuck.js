@@ -399,7 +399,7 @@ window['ZuckitaDaGalera'] = window['Zuck'] = function(timeline, options) {
 				htmlItems += '<div data-time="'+g(item, 'time')+'" data-type="' + g(item, 'type') + '"'+commonAttrs+' class="item ' + seemClass +
 					' ' + ((currentItem === i) ? 'active' : '') + '">' +	
 					((g(item, 'type') === 'app') ? g(item, 'src') : '') +
-					((g(item, 'type') === 'photo') ? g(item, 'src') : '<img class="media" src="' + g(item, 'src') + '" ' + g(item, 'type') + '>') +
+					((g(item, 'type') === 'photo') ? '<img class="media" src="' + g(item, 'src') + '">' : '') +
 					((g(item, 'type') === 'video') ? '<video class="media" muted webkit-playsinline playsinline preload="auto" src="' + g(item, 'src') + '" ' + g(item, 'type') + '></video><b class="tip muted">' + option('language', 'unmute') + '</b>' : '') +
 					((g(item, 'link')) ? '<a class="tip link" href="'+g(item, 'link')+'" rel="noopener" target="_blank">' + ((linkText == '') ? option('language', 'visitLink') : linkText) + '</a>' : '') +
 					'</div>';
