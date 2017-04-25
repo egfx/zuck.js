@@ -21,9 +21,9 @@ window['ZuckitaDaGalera'] = window['Zuck'] = function(timeline, options) {
                 return '';
             }
         },
-	h = function (value){
+	/*h = function (value){
   		return $('<div/>').html(value).text();
-	},
+	},*/
         each = function(arr, func) {
             if (arr) {
                 var total = arr.length;
