@@ -872,10 +872,7 @@ window['ZuckitaDaGalera'] = window['Zuck'] = function(timeline, options) {
                 if (unmute.target) {
                     unmuteVideoItem(video, storyViewer);
                 }
-            } else if(itemElement.getAttribute('data-type') == 'app') {
-	    	zuck.internalData['currentVideoElement'] = false;
-		console.log('message from zuck app');
-	    } else {
+            } else {
                 zuck.internalData['currentVideoElement'] = false;
             }
         },
